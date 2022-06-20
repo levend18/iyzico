@@ -1,0 +1,34 @@
+iyzipay.3d_landing_page:
+  path: 'iyzico/3d_landing_page'
+  defaults:
+    _controller: '\Drupal\iyzico\Controller\RedirectController::getStatus'
+  options:
+    no_cache: TRUE
+  requirements:
+    _permission: 'access content'
+iyzico.iyzi_co_admin_keys:
+  path: '/admin/config/iyzico/iyzicoadminkeys'
+  defaults:
+    _form: '\Drupal\iyzico\Form\IyziCoAdminKeys'
+    _title: 'IyziCoAdminKeys'
+  requirements:
+    _permission: 'access administration pages'
+  options:
+    _admin_route: TRUE
+iyzico.twilio:
+  path: 'message/confirmation'
+  defaults:
+    _controller: '\Drupal\iyzico\Controller\MessageConfirm::SendMessage'
+  options:
+    no_cache: TRUE
+  requirements:
+    _permission: 'access content'
+
+iyzico.redirect:
+  path: 'callback'
+  defaults:
+    _controller: '\Drupal\iyzico\Controller\RedirectController::callback'
+  options:
+    no_cache: TRUE
+  requirements:
+    _permission: 'access content'

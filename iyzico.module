@@ -1,0 +1,20 @@
+<?php
+
+use Drupal\Core\Form\FormStateInterface;
+use Twilio\Exceptions\ConfigurationException;
+use Twilio\Exceptions\TwilioException;
+use Twilio\Rest\Client;
+
+/**
+ * @file
+ * Contains iyzipay.module.
+ */
+function iyzico_form_alter(&$form, &$form_state, $form_id) {
+
+  if ($form_id == "webform_submission_talep_node_34_add_form") {
+    $form['elements']['danismak_istediginiz_konu']['#default_value'] = $_GET['name'];
+    $form['elements']['danismak_istediginiz_konu']['#cache'] = [
+      'max-age' => 0
+    ];
+  }
+}

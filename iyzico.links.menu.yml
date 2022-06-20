@@ -1,0 +1,6 @@
+iyzico.iyzi_co_admin_keys:
+  title: 'Iyzico admin configuration'
+  route_name: iyzico.iyzi_co_admin_keys
+  description: 'Iyzico api settings'
+  parent: system.admin_config_system
+  weight: 99

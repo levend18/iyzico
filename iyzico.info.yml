@@ -1,0 +1,10 @@
+name: 'Commerce iyzico'
+type: module
+description: 'iyzico module'
+core: 8.x
+core_version_requirement: ^8 || ^9
+package: 'commerce'
+# Information added by Drupal.org packaging script on 2021-12-01
+version: '1.0.0'
+project: 'iyzico'
+datestamp: 1638374883
